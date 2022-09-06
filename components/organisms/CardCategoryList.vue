@@ -1,13 +1,13 @@
 <template>
-    <ul class="c-list">
-      <CardCategory
-        v-for="categoryData in categoryDatas"
-        :key="categoryData.id"
-        :to="`./${categoryData.type}/`"
-        :text="categoryData.type_ja"
-        class="c-listItem"
-      />
-    </ul>
+  <ul class="c-list">
+    <CardCategory
+      v-for="categoryData in categoryDatas"
+      :key="categoryData.id"
+      :to="`./${categoryData.type}/`"
+      :text="categoryData.type_ja"
+      class="c-listItem"
+    />
+  </ul>
 </template>
 
 <script>
@@ -33,10 +33,10 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  &::after{
-    content:"";
+  &::after {
+    content: '';
     display: block;
-    width:30%;
+    width: 30%;
   }
   &Item {
     width: 30%;

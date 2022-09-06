@@ -1,15 +1,14 @@
 <template>
   <div class="l-content">
     <div class="l-contentInner inner">
-      <PageSummary
-        :title="part.name_ja"
-      />
+      <PageSummary :title="part.name_ja" />
       <CardIFrame :key="part.codepen_id" :codepen-id="part.codepen_id" />
       <section class="c-relation">
-        <PageSummary
-          title="■他のスタイル"
+        <PageSummary title="■他のスタイル" />
+        <CardPartsList
+          :parts-datas="relationData.parts"
+          :type="$route.params.type"
         />
-        <CardPartsList :parts-datas="relationData.parts" :type="$route.params.type" />
       </section>
     </div>
   </div>
@@ -69,6 +68,6 @@ export default class Parts extends Vue {
 <style lang="scss" scoped>
 .c-relation {
   margin-top: 50px;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
 }
 </style>

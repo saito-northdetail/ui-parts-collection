@@ -55,8 +55,9 @@ $ npm run generate
 ```
 
 ## デザインルール
-* Atomic Designのエッセンスを導入
-* templatesはなし(混乱を招く原因)
+
+- Atomic Design のエッセンスを導入
+- templates はなし(混乱を招く原因)
 
 ## 参考サイト
 

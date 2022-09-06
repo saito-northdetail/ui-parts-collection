@@ -1,14 +1,14 @@
 <template>
-    <ul class="c-list">
-      <CardParts
-        v-for="partsData in partsDatas"
-        :key="partsData.id"
-        :to="`/${type}/${partsData.id}/`"
-        :text="partsData.name_ja"
-        src=""
-        class="c-listItem"
-      />
-    </ul>
+  <ul class="c-list">
+    <CardParts
+      v-for="partsData in partsDatas"
+      :key="partsData.id"
+      :to="`/${type}/${partsData.id}/`"
+      :text="partsData.name_ja"
+      src=""
+      class="c-listItem"
+    />
+  </ul>
 </template>
 
 <script>
@@ -41,10 +41,10 @@ export default {
   flex-wrap: wrap;
   margin: 0;
   padding: 50px 0;
-  &::after{
-    content:"";
+  &::after {
+    content: '';
     display: block;
-    width:30%;
+    width: 30%;
   }
   &Item {
     width: 30%;

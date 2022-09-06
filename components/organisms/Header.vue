@@ -74,7 +74,6 @@ export default class Header extends Vue {
     list-style-type: none;
     text-align: center;
     &Link {
-
     }
   }
 }

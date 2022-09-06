@@ -1,9 +1,7 @@
 <template>
   <div class="l-content">
     <div class="l-contentInner inner">
-      <PageSummary
-        :title="data.type_ja"
-      />
+      <PageSummary :title="data.type_ja" />
       <CardPartsList :parts-datas="data.parts" :type="$route.params.type" />
     </div>
   </div>
@@ -27,9 +25,15 @@ export default class Type extends Vue {
     return {
       title: `カテゴリ「${this.data?.type_ja}」`,
     };
+  }
+
+  data: TPartsData | undefined | null = {
+    id: 0,
+    type: '',
+    type_ja: '',
+    parts: [],
   };
 
-  data: TPartsData | undefined | null = {id: 0, type: '', type_ja: '', parts: []};
   mounted() {
     this.data = getParts(this.$route.params.type);
   }

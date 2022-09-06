@@ -32,7 +32,7 @@ export default class Index extends Vue {
     return {
       title: 'TOP',
     };
-  };
+  }
 
   datas: TPartsDatas = [];
   mounted() {
