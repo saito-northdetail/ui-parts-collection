@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{332:function(e,t,n){"use strict";n.r(t);var r={name:"CardLabel",props:{text:{type:String,default:"",required:!0}}},l=n(26),component=Object(l.a)(r,(function(){var e=this;return(0,e._self._c)("span",[e._v(e._s(e.text))])}),[],!1,null,"f42a1786",null);t.default=component.exports}}]);
