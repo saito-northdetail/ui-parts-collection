@@ -3,7 +3,7 @@
     class="codepen"
     data-default-tab="html,result"
     :data-slug-hash="codepenId"
-  ></p>
+  />
 </template>
 
 <script>

@@ -1,7 +1,11 @@
 <template>
   <section class="c-summary">
-    <h1 class="c-title">{{ title }}</h1>
-    <p v-if="description" class="c-description">{{ description }}</p>
+    <h1 class="c-title">
+      {{ title }}
+    </h1>
+    <p v-if="description" class="c-description">
+      {{ description }}
+    </p>
   </section>
 </template>
 

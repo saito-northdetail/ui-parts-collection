@@ -1,7 +1,7 @@
 <template>
   <header class="l-header">
     <div class="l-headerInner inner">
-      <nuxt-link to="/" class="c-logo">UIパーツ集</nuxt-link>
+      <nuxt-link to="/" class="c-logo"> UIパーツ集 </nuxt-link>
       <!-- <nav class="c-nav">
         <button type="button" class="c-navButton">パーツ種類</button>
         <ul class="c-navList">
@@ -73,8 +73,6 @@ export default class Header extends Vue {
     height: 50px;
     list-style-type: none;
     text-align: center;
-    &Link {
-    }
   }
 }
 </style>

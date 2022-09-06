@@ -1,6 +1,8 @@
 <template>
   <section class="c-section">
-    <h2 class="c-title">{{ title }}</h2>
+    <h2 class="c-title">
+      {{ title }}
+    </h2>
     <slot />
   </section>
 </template>
