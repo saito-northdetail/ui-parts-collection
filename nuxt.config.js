@@ -57,4 +57,28 @@ export default {
   router: {
     base: '/ui-parts-collection/',
   },
+
+  // 動的ルーティングを行うための設定
+  generate: {
+    routes: [
+      '/button/',
+      '/button/1/',
+      '/button/2/',
+      '/button/3/',
+      '/button/4/',
+      '/link/',
+      '/link/1/',
+      '/link/2/',
+      '/link/3/',
+      '/link/4/',
+      '/tab/',
+      '/tab/1/',
+      '/search/',
+      '/search/1/',
+      '/parallax/',
+      '/parallax/1/',
+      '/hamburger/',
+      '/hamburger/1/',
+    ],
+  },
 };
