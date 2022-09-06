@@ -39,4 +39,12 @@ jobs:
         run: npm run lint
 
       - name: Run generate 🔀
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: npm run generate
+
+      - name: Deploy🎊
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
