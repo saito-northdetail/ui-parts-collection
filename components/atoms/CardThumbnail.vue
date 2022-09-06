@@ -8,7 +8,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: '/img/noimage.png',
+      default: '/ui-parts-collection/img/noimage.png',
       required: false,
     },
     alt: {
