@@ -16,5 +16,6 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'vue/multi-word-component-names': 'off',
     'no-console': ['error', { allow: ['warn', 'error'] }],
+    'nuxt/no-cjs-in-config': 'off',
   },
 };

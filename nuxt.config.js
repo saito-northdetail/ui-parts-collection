@@ -1,3 +1,6 @@
+const fs = require('fs');
+const partsData = JSON.parse(fs.readFileSync('static/data/parts.json'));
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -60,25 +63,13 @@ export default {
 
   // 動的ルーティングを行うための設定
   generate: {
-    routes: [
-      '/button/',
-      '/button/1/',
-      '/button/2/',
-      '/button/3/',
-      '/button/4/',
-      '/link/',
-      '/link/1/',
-      '/link/2/',
-      '/link/3/',
-      '/link/4/',
-      '/tab/',
-      '/tab/1/',
-      '/search/',
-      '/search/1/',
-      '/parallax/',
-      '/parallax/1/',
-      '/hamburger/',
-      '/hamburger/1/',
-    ],
+    routes() {
+      return partsData.map(item => {
+        const partPath =  item.parts.map(part => {
+            return `/${item.type}/${part.name}/`;
+        });
+        return [`/${item.type}/`, ...partPath];
+      }).flat();
+    },
   },
 };
