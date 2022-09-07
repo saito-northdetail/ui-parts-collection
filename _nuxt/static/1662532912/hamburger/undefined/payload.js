@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/hamburger/undefined", {data:[{}],fetch:{},mutations:void 0});

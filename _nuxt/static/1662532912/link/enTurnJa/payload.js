@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/link/enTurnJa", {data:[{}],fetch:{},mutations:void 0});

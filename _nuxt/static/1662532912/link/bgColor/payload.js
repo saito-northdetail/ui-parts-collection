@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/link/bgColor", {data:[{}],fetch:{},mutations:void 0});

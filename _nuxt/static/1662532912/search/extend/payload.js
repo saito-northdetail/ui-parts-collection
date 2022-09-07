@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/search/extend", {data:[{}],fetch:{},mutations:void 0});
