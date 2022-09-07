@@ -67,7 +67,7 @@ export default {
       return partsData
         .map((item) => {
           const partPath = item.parts.map((part) => {
-            return `/${item.type}/${part.name}/`;
+            return `/${item.type}/${part.id}/`;
           });
           return [`/${item.type}/`, ...partPath];
         })
