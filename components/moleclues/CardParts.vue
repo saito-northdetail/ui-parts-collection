@@ -1,22 +1,22 @@
 <template>
   <li class="c-card">
-    <CardExternalLink :href="to" class="c-cardLink">
+    <CardLink :to="to" class="c-cardLink">
       <CardThumbnail v-show="src" :alt="text" class="c-cardThumbnail" />
       <CardTitleText :text="text" />
-    </CardExternalLink>
+    </CardLink>
   </li>
 </template>
 
 <script>
 import CardTitleText from '@/components/atoms/CardTitleText.vue';
-import CardExternalLink from '@/components/atoms/CardExternalLink.vue';
+import CardLink from '@/components/atoms/CardLink.vue';
 import CardThumbnail from '@/components/atoms/CardThumbnail.vue';
 
 export default {
   name: 'CardCategory',
   components: {
     CardTitleText,
-    CardExternalLink,
+    CardLink,
     CardThumbnail,
   },
   props: {

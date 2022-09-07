@@ -33,14 +33,6 @@ export default class Parts extends Vue {
   head() {
     return {
       title: `${this.part?.name_ja}`,
-      script: [
-        {
-          src: 'https://cpwebassets.codepen.io/assets/embed/ei.js',
-          body: true,
-          defer: true,
-          hid: 'codepenScript',
-        },
-      ],
     };
   }
 
@@ -59,8 +51,13 @@ export default class Parts extends Vue {
   };
 
   mounted() {
+    // データの取得
     this.part = getPart(this.$route.params.type, Number(this.$route.params.id));
     this.relationData = getParts(this.$route.params.type);
+    // CodePen用のスクリプトの追加
+    const script = document.createElement('script');
+    script.src = 'https://cpwebassets.codepen.io/assets/embed/ei.js';
+    this.$el.appendChild(script);
   }
 }
 </script>

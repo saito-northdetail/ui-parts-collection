@@ -3,7 +3,7 @@
     <CardParts
       v-for="partsData in partsDatas"
       :key="partsData.id"
-      :to="`./${type}/${partsData.id}/`"
+      :to="`./${partsData.id}/`"
       :text="partsData.name_ja"
       src=""
       class="c-listItem"
