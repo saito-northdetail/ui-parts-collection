@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/button/flow", {data:[{}],fetch:{},mutations:void 0});
