@@ -2,7 +2,11 @@
   <div class="l-content">
     <div class="l-contentInner inner">
       <PageSummary :title="data.type_ja" />
-      <CardPartsList :parts-datas="data.parts" :type="$route.params.type" />
+      <CardPartsList
+        :parts-datas="data.parts"
+        :type="$route.params.type"
+        prefix-path="./"
+      />
     </div>
   </div>
 </template>

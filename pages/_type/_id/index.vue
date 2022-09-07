@@ -8,6 +8,7 @@
         <CardPartsList
           :parts-datas="relationData.parts"
           :type="$route.params.type"
+          prefix-path="../"
         />
       </section>
     </div>

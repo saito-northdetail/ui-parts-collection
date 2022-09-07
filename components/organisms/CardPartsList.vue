@@ -3,7 +3,7 @@
     <CardParts
       v-for="partsData in partsDatas"
       :key="partsData.id"
-      :to="`./${partsData.id}/`"
+      :to="`${prefixPath}${partsData.id}/`"
       :text="partsData.name_ja"
       src=""
       class="c-listItem"
@@ -28,6 +28,11 @@ export default {
     partsDatas: {
       type: Array,
       default: () => [],
+      required: true,
+    },
+    prefixPath: {
+      type: String,
+      default: './',
       required: true,
     },
   },
