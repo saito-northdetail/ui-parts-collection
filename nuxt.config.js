@@ -64,12 +64,14 @@ export default {
   // 動的ルーティングを行うための設定
   generate: {
     routes() {
-      return partsData.map(item => {
-        const partPath =  item.parts.map(part => {
+      return partsData
+        .map((item) => {
+          const partPath = item.parts.map((part) => {
             return `/${item.type}/${part.name}/`;
-        });
-        return [`/${item.type}/`, ...partPath];
-      }).flat();
+          });
+          return [`/${item.type}/`, ...partPath];
+        })
+        .flat();
     },
   },
 };
