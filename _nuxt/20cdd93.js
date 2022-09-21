@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{284:function(t,n,e){"use strict";e.r(n);var c={name:"LayoutContent"},l=e(24),component=Object(l.a)(c,(function(){var t=this._self._c;return t("div",{staticClass:"l-content"},[t("div",{staticClass:"l-contentInner inner"},[this._t("default")],2)])}),[],!1,null,"4fdb6488",null);n.default=component.exports}}]);
