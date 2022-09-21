@@ -1,19 +1,18 @@
 <template>
-  <div class="l-content">
-    <div class="l-contentInner inner">
-      <PageSummary
-        title="UIパーツ集"
-        description="よくあるパーツをまとめたページとなります"
-      />
-      <PageSection title="パーツ種類">
-        <CardCategoryList :category-datas="datas" />
-      </PageSection>
-    </div>
-  </div>
+  <LayoutContent>
+    <PageSummary
+      title="UIパーツ集"
+      description="よくあるパーツをまとめたページとなります"
+    />
+    <PageSection title="パーツ種類">
+      <CardCategoryList :category-datas="datas" />
+    </PageSection>
+  </LayoutContent>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import LayoutContent from '@/components/atoms/LayoutContent.vue';
 import PageSummary from '@/components/moleclues/PageSummary.vue';
 import PageSection from '@/components/moleclues/PageSection.vue';
 import CardCategoryList from '@/components/organisms/CardCategoryList.vue';
@@ -22,6 +21,7 @@ import { TPartsDatas } from '@/types/parts';
 
 @Component({
   components: {
+    LayoutContent,
     PageSummary,
     PageSection,
     CardCategoryList,

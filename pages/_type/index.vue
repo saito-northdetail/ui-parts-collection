@@ -1,18 +1,17 @@
 <template>
-  <div class="l-content">
-    <div class="l-contentInner inner">
-      <PageSummary :title="data.type_ja" />
-      <CardPartsList
-        :parts-datas="data.parts"
-        :type="$route.params.type"
-        prefix-path="./"
-      />
-    </div>
-  </div>
+  <LayoutContent>
+    <PageSummary :title="data.type_ja" />
+    <CardPartsList
+      :parts-datas="data.parts"
+      :type="$route.params.type"
+      prefix-path="./"
+    />
+  </LayoutContent>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import LayoutContent from '@/components/atoms/LayoutContent.vue';
 import PageSummary from '@/components/moleclues/PageSummary.vue';
 import CardPartsList from '@/components/organisms/CardPartsList.vue';
 import { getParts } from '@/api/parts/get';
@@ -20,6 +19,7 @@ import { TPartsData } from '~/types/parts';
 
 @Component({
   components: {
+    LayoutContent,
     PageSummary,
     CardPartsList,
   },

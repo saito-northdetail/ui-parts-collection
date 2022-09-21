@@ -1,15 +1,20 @@
 <template>
-  <section class="c-section">
+  <LayoutSection>
     <h2 class="c-title">
       {{ title }}
     </h2>
     <slot />
-  </section>
+  </LayoutSection>
 </template>
 
 <script>
+import LayoutSection from '@/components/atoms/LayoutSection.vue';
+
 export default {
   name: 'PageSection',
+  components: {
+    LayoutSection,
+  },
   props: {
     title: {
       type: String,
@@ -21,13 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px;
-  text-align: center;
-}
 .c-title {
   font-size: $h2-font-size;
 }

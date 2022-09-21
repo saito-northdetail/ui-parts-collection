@@ -1,22 +1,22 @@
 <template>
-  <div class="l-content">
-    <div class="l-contentInner inner">
-      <PageSummary :title="part.name_ja" />
-      <CardIFrame :key="part.codepen_id" :codepen-id="part.codepen_id" />
-      <section class="c-relation">
-        <PageSummary title="■他のスタイル" />
-        <CardPartsList
-          :parts-datas="relationData.parts"
-          :type="$route.params.type"
-          prefix-path="../"
-        />
-      </section>
-    </div>
-  </div>
+  <LayoutContent>
+    <PageSummary :title="part.name_ja" />
+    <CardIFrame :key="part.codepen_id" :codepen-id="part.codepen_id" />
+    <LayoutRelation>
+      <PageSummary title="■他のスタイル" />
+      <CardPartsList
+        :parts-datas="relationData.parts"
+        :type="$route.params.type"
+        prefix-path="../"
+      />
+    </LayoutRelation>
+  </LayoutContent>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import LayoutContent from '@/components/atoms/LayoutContent.vue';
+import LayoutRelation from '@/components/atoms/LayoutRelation.vue';
 import PageSummary from '@/components/moleclues/PageSummary.vue';
 import CardPartsList from '@/components/organisms/CardPartsList.vue';
 import CardIFrame from '@/components/atoms/CardIFrame.vue';
@@ -25,6 +25,8 @@ import { TPart, TPartsData } from '~/types/parts';
 
 @Component({
   components: {
+    LayoutContent,
+    LayoutRelation,
     PageSummary,
     CardPartsList,
     CardIFrame,

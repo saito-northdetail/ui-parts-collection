@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link :to="to" class="c-link">
+  <nuxtLink :to="to" class="c-link">
     <slot />
-  </nuxt-link>
+  </nuxtLink>
 </template>
 
 <script>

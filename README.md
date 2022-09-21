@@ -1,45 +1,26 @@
 # HTML - UI パーツ集
 
+## 基本設計
+
+- フレームワーク：Nuxt.js(2.x)
+  - pages：TypeScript
+  - component：JavaScript
+- Linter / Formatter
+  - CSS：Stylelint
+  - JS：ESLint
+  - Formatter：Prettier
+- CMS：data/parts.json
+- Hosting：Github Pages
+- CI/CD：Github Actions
+
 ## ページ構成
 
 ![ページ構成](./static/documents/config.drawio.svg)
 
 ## 組み込むこと
 
-- Nuxt で作成
-- TypeScript で作成
-- データ管理は静的 json 管理で対応(のちに API に置き換え可能なように)
-- CSS 記法は FLOCSS で作成
 - stylelint は設定は行う(可能であれば ESLint も)
 - デプロイしブラウザで見れるようにする(Github or Gitbucket)
-
-## 作成スケジュール
-
-- 〜07/15：環境構築
-- 〜07/29：ボタンの作成
-- 〜08/12：テキストリンクの作成
-- 〜08/26：タブメニューの作成
-- 〜09/09：検索ボックスの作成
-- 〜09/23：パララックスの作成
-- 〜09/30：ハンバーガーメニュー
-
-## 組み込みパーツ(予定)
-
-- ボタン
-  - 透過
-  - 背景が流れる
-  - 波紋
-  - 押し込み
-- テキストリンク
-  - 透過
-  - 下線が伸びるもの
-  - 文字色がグラデーションのようなカラー変更
-  - 文字が大きくなる
-  - テキストが入れ替わる
-- タブメニュー
-- 検索ボックス
-- パララックス
-- ハンバーガー
 
 ## セットアップ
 
